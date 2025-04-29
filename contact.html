@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Bois créatif</title>
+
+    <!-- slider stylesheet -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <!-- font awesome style -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+    <!-- Inclure le CSS de Leaflet -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+
+    <!-- Inclure la bibliothèque JavaScript de Leaflet -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  </head>
+
+  <body>
+    <div class="hero_area">
+      <!-- header section strats -->
+      <header class="header_section">
+        <div class="header_top">
+          <div class="container-fluid">
+            <div class="contact_nav">
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span> Call : +229 0147475522 </span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span> Email : ahouandjinoutheophile295@gmail.com </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="header_bottom">
+          <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg custom_nav-container">
+              <a class="navbar-brand" href="index.html">
+                <span> Bois créatif </span>
+              </a>
+
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class=""> </span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html"
+                      >Accueil <span class="sr-only">(current)</span></a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html"> À propos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="service.html">Services</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!-- end header section -->
+    </div>
+
+    <!-- contact section -->
+
+    <section class="contact_section layout_padding">
+      <div class="container">
+        <div class="heading_container">
+          <h2>Contactez-nous</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <form id="whatsappForm" onsubmit="sendToWhatsApp(); return false;">
+              <div>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Nom complet"
+                  required
+                />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  id="phone"
+                  placeholder="Numéro de téléphone"
+                />
+              </div>
+              <div>
+                <input type="email" id="email" placeholder="Email" />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  id="message"
+                  class="message-box"
+                  placeholder="Votre message"
+                  required
+                />
+              </div>
+              <div class="d-flex">
+                <button type="submit">Envoyer via WhatsApp</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-md-6">
+            <div class="map_container">
+              <div class="map">
+                <div id="googleMap" style="width: 100%; height: 100%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end contact section -->
+
+    <!-- info section -->
+    <section class="info_section">
+      <div class="container">
+        <h4 class="text-center mb-4">Nous contacter</h4>
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <div class="item text-center p-3">
+              <div class="img-box mb-2" style="font-size: 30px; color: #795548">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+              </div>
+              <p class="mb-0">Abomey-Calavi, Bénin</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="item text-center p-3">
+              <div class="img-box mb-2" style="font-size: 30px; color: #795548">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+              </div>
+              <p class="mb-0">+229 01 47 47 55 22</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="item text-center p-3">
+              <div class="img-box mb-2" style="font-size: 30px; color: #795548">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+              </div>
+              <p class="mb-0">ahouandjinoutheophile295@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="social-box">
+        <h4>Follow Us</h4>
+        <div class="box">
+          <a href="">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a href="">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+          <a href="">
+            <i class="fa fa-youtube" aria-hidden="true"></i>
+          </a>
+          <a href="">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- end info_section -->
+
+    <!-- footer section -->
+    <footer class="footer_section">
+      <div class="container">
+        <p>
+          &copy; <span id="displayDateYear"></span>Tous droits réservé .
+          <a href="https://portfolio-cnkp.verce.app/">Ray Ague</a>
+        </p>
+      </div>
+    </footer>
+    <!-- footer section -->
+
+    <!-- Script pour gérer l'envoi vers WhatsApp -->
+    <!-- Script pour gérer l'envoi vers WhatsApp -->
+    <script>
+      function sendToWhatsApp() {
+        const name = document.getElementById("name").value.trim();
+        const phone = document.getElementById("phone").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const message = document.getElementById("message").value.trim();
+
+        const text = `Bonjour, je suis ${name}.
+Téléphone : ${phone}
+Email : ${email}
+Message : ${message}`;
+
+        const whatsappNumber = "22996084587"; // format international sans "+"
+        const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+          text
+        )}`;
+
+        window.open(url, "_blank");
+      }
+    </script>
+    <script>
+      var map = L.map("map").setView([6.4476, 2.4235], 13); // Coordonnées d'Abomey-Calavi
+
+      // Ajouter une couche de carte OpenStreetMap
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution:
+          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      }).addTo(map);
+
+      // Ajouter un marqueur à Abomey-Calavi
+      L.marker([6.4476, 2.4235])
+        .addTo(map)
+        .bindPopup("<b>Abomey-Calavi</b><br>Lieu de notre entreprise.")
+        .openPopup();
+    </script>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+    <!-- End Google Map -->
+  </body>
+</html>
